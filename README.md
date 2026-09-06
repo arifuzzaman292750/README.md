@@ -13,9 +13,9 @@ In Linux, everything starts from the root directory (`/`). Here are the key dire
 | Directory | Purpose |
 | :--- | :--- |
 
-/ [root]
-├── sbin/ [System binaries for admin]
-├── usr/ [User programs & data]
+|/ [root]|
+|├── sbin/ [System binaries for admin]|
+|├── usr/ [User programs & data]|
 │ ├── bin/ [User commands: cp, ls, sh, tar, vi, man]
 │ ├── contrib/ [Contributed software]
 │ ├── lib/ [Libraries]
