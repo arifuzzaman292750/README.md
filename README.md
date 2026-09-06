@@ -43,3 +43,32 @@ In Linux, everything starts from the root directory (`/`). Here are the key dire
     ├── user2/
     └── user3/
 
+# 🐧 Linux Commands & File System Cheat Sheet
+
+A beginner-friendly guide to understanding the Linux directory structure and essential command-line utility tools.
+
+---
+
+## 📂 Linux Directory Structure
+
+In Linux, everything starts from the root directory (`/`). Here are the key directories and their purpose:
+
+| Directory | Purpose |
+| :--- | :--- |
+| `/` | **Root:** The top-level directory of the entire file system. |
+| `/bin` | **Essential User Binaries:** Basic commands needed for system boot (e.g., `ls`, `cp`, `cd`). |
+| `/etc` | **Configuration Files:** System-wide settings and program configuration files. |
+| `/home` | **User Home Directories:** Personal storage for users (e.g., `/home/username/`). |
+| `/var` | **Variable Data:** Files that frequently change, such as system logs (`/var/log`) and database files. |
+| `/usr` | **User Programs:** Secondary hierarchy for read-only user data, utilities, and applications. |
+| `/tmp` | **Temporary Files:** Location where applications store temporary session files (usually cleared on reboot). |
+| `/dev` | **Device Files:** Hardware devices represented as files (e.g., storage drives, terminal devices). |
+
+---
+
+## 🛠️ Essential Linux Commands
+
+### 1. Navigating the File System
+* **`pwd`** — Print Working Directory (shows your current location).
+  ```bash
+  pwd
