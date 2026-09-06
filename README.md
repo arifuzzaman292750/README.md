@@ -6,6 +6,17 @@ A beginner-friendly guide to understanding the Linux directory structure and ess
 
 ---
 
+## 📖 What you will learn
+
+- 🐧 Linux File System
+- 💻 Basic Linux Commands
+- 📁 File & Directory Management
+- 🔍 Searching & File Reading
+- 🔐 Basic Security Commands
+- 🧪 Practical Command Examples
+
+---
+
 ## 📂 Linux Directory Structure
 
 In Linux, everything starts from the root directory (`/`). Here is the standard directory tree structure:
