@@ -8,9 +8,6 @@ A beginner-friendly guide to understanding the Linux directory structure and ess
 
 ## 📂 Linux Directory Structure
 
-In Linux, everything starts from the root directory (`/`). Here are the key directories and their purpose:
-## 📂 Linux Directory Structure
-
 In Linux, everything starts from the root directory (`/`). Here is the standard directory tree structure:
 
 ```text
