@@ -9,34 +9,35 @@ A beginner-friendly guide to understanding the Linux directory structure and ess
 ## 📂 Linux Directory Structure
 
 In Linux, everything starts from the root directory (`/`). Here are the key directories and their purpose:
+## 📂 Linux Directory Structure
 
-| Directory | Purpose |
-| :--- | :--- |
+In Linux, everything starts from the root directory (`/`). Here is the standard directory tree structure:
 
-|/ [root]|
-|├── sbin/ [System binaries for admin]|
-|├── usr/ [User programs & data]|
-│ ├── bin/ [User commands: cp, ls, sh, tar, vi, man]
-│ ├── contrib/ [Contributed software]
-│ ├── lib/ [Libraries]
-│ ├── local/ [Locally installed software]
-│ ├── sbin/ [Admin tools]
-│ ├── share/
-│ │ └── man/ [Manual pages]
-│ └── vue/ [Old BSD folder, rarely used now]
+```text
+/ [root]
+├── sbin/ [System binaries for admin]
+├── usr/ [User programs & data]
+│   ├── bin/ [User commands: cp, ls, sh, tar, vi, man]
+│   ├── contrib/ [Contributed software]
+│   ├── lib/ [Libraries]
+│   ├── local/ [Locally installed software]
+│   ├── sbin/ [Admin tools]
+│   ├── share/
+│   │   └── man/ [Manual pages]
+│   └── vue/ [Old BSD folder, rarely used now]
 ├── dev/ [Device files]
 ├── etc/ [System configs]
-│ ├── group [User groups file]
-│ ├── passwd [User accounts file]
-│ └── profile [Default shell settings]
+│   ├── group [User groups file]
+│   ├── passwd [User accounts file]
+│   └── profile [Default shell settings]
 ├── opt/ [Optional 3rd party software]
 ├── var/ [Variable data/logs]
-│ ├── mail/
-│ ├── news/
-│ ├── tmp/
-│ └── vue/
+│   ├── mail/
+│   ├── news/
+│   ├── tmp/
+│   └── vue/
 ├── stand/ [Standalone programs]
-│ └── vmunix [Kernel file - old Unix name]
+│   └── vmunix [Kernel file - old Unix name]
 ├── tmp/ [Temporary files]
 └── home/ [User home folders]
     ├── user1/
