@@ -163,3 +163,32 @@ tar -cvf file.tar <dir>         # Create a .tar archive
 tar -xvf file.tar               # Extract a .tar archive
 tar -czvf file.tar.gz <dir>     # Create a compressed .tar.gz archive
 tar -xzvf file.tar.gz           # Extract a compressed .tar.gz archive
+
+---
+
+## 🎯 Important Linux Directories & Files for Ethical Hacking
+
+| Directory / File | Why it matters for Hacking & Privilege Escalation |
+| :--- | :--- |
+| `/etc/passwd` | List of all system users. Shows existing user accounts. |
+| `/etc/shadow` | Hashed user passwords (root access required). Prime target for password cracking. |
+| `/etc/group` | User groups and group permissions. |
+| `/home/username/` | User personal files, SSH keys, and `.bash_history` (sensitive info exposure). |
+| `/root/` | Root user home directory; often contains scripts, notes, and admin credentials. |
+| `/var/log/auth.log` | Records all login attempts (SSH, sudo, failed logins). Used to track brute force attacks. |
+| `/etc/ssh/sshd_config` | SSH server configuration (port changes, root login settings). |
+| `/etc/crontab` & `/var/spool/cron/` | Scheduled cron jobs. Prime target for privilege escalation and persistence/backdoors. |
+| `/etc/hosts` | Local DNS overrides. Used for network redirection and local phishing tests. |
+| `/etc/fstab` | Mounted filesystems at boot time. Can reveal hidden or unmounted drives. |
+| `/etc/sudoers` | Defines `sudo` privileges. Major privilege escalation target. |
+| `/proc/` | Virtual filesystem containing live process & kernel info (e.g., `/proc/net/tcp`, `/proc/version`). |
+| `/sys/` | Exposes kernel and hardware device details. |
+| `/bin`, `/usr/bin`, `/sbin` | Standard binary locations. Useful for checking SUID binaries and trojaned commands. |
+| `/var/log/` | System log directory (`syslog`, `apache2/`, `kern.log`). Used to analyze vulnerabilities or cover tracks. |
+| `/var/www/html/` | Default web root folder. Target location for uploading webshells. |
+| `/srv/` | Data folder for site-specific services served by the system. |
+| `/opt/` | Third-party applications (e.g., Metasploit, Burp Suite). Often contains custom/misconfigured software. |
+| `/tmp/` | World-writable directory. Ideal location to drop payloads and local exploits. |
+| `/dev/` | Device files. Direct raw disk access or memory inspection targets. |
+| `/boot/` | Kernel images and GRUB configs. Target location for rootkits/bootkits. |
+| `/usr/local/bin/` | Preferred path for dropping custom scripts, administrative tools, or backdoors. |
